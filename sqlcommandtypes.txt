@@ -1,0 +1,21 @@
+Different types of commands in SQL:
+•	DDL commands: - To create a database objects
+•	DML commands: - To manipulate data of a database objects
+•	DQL command: - To retrieve the data from a database.
+•	DCL/DTL commands: - To control the data of a database
+
+DDL=CREATE,ALTER,DROP,TRUNCATE,COMMENT,RENAME
+DML=INSERT,UPDATE,DELETE,MERGE,CALL,EXPLAINPLAN
+DCL=GRANT, REVOKE
+TCL=COMMIT,ROLLBACK,SAVEPOINT,AUTOCOMMIT
+DQL=SELECT
+
+Database-Level:
+CREATE DATABASE databaseName	-Create a new database
+CREATE DATABASE IF NOT EXISTS databaseName - Create only if it does not exists 
+SHOW DATABASES	- Show all the databases in this server
+USE databaseName	- Set the default (current) database
+SELECT DATABASE()	- Show the default database
+SHOW CREATE DATABASE databaseName	- Show the CREATE DATABASE statement 
+DROP DATABASE databaseName	 -- Delete the database (irrecoverable!)
+DROP DATABASE IF EXISTS databaseName	- Delete if it exists

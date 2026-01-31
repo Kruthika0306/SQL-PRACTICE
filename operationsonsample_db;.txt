@@ -1,0 +1,20 @@
+CREATE DATABASE sample_db;
+USE sample_db;
+
+CREATE TABLE employees (
+    emp_id INT,
+    salary INT
+);
+
+INSERT INTO employees VALUES
+(1, 30000),
+(2, 45000),
+(3, 50000),
+(4, 40000);
+
+SELECT 
+    COUNT(*) AS total_employees,
+    AVG(salary) AS average_salary,
+    MAX(salary) AS highest_salary,
+    MIN(salary) AS lowest_salary
+FROM employees;
